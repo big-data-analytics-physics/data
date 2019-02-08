@@ -15,7 +15,7 @@ for line in fyin:
         fy.append(float(line.strip()))
 
 fout = open("combined.csv","w")
-fout.write("score1,scor2,admitted\n")
+fout.write("score1,score2,admitted\n")
 for i in range(len(fy)):
 	fout.write(str(fx1[i])+','+str(fx2[i])+','+str(fy[i])+'\n')
 fout.close()
